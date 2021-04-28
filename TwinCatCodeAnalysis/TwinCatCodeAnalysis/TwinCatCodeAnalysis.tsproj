@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.12">
+	<Project ProjectGUID="{E0C7EB21-5808-4DDF-9F12-1550C45D55DB}" Target64Bit="true" ShowHideConfigurations="#x106">
+		<Plc>
+			<Project GUID="{ABD0DAAB-FED2-44DC-AF6D-1D66AF511B0D}" Name="CodeAnalysis" PrjFilePath="CodeAnalysis\CodeAnalysis.plcproj" TmcFilePath="CodeAnalysis\CodeAnalysis.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>CodeAnalysis Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
+				</Instance>
+			</Project>
+		</Plc>
+		<Io>
+			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="10.0.2.15.2.1" RemoteName="Gerät 1 (EtherCAT)">
+				<Name>Gerät 1 (EtherCAT)</Name>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc></DeviceDesc>
+						<DeviceName></DeviceName>
+						<DeviceData>000000000000</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>Prozessabbild</Name>
+				</Image>
+				<EtherCAT/>
+			</Device>
+		</Io>
+	</Project>
+</TcSmProject>
